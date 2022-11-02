@@ -1,0 +1,206 @@
+ * {
+    box-sizing: border-box;
+ }
+
+ /* Navigation */
+
+header {
+    background-color: #ffff;
+    display: flex;
+    height: 8rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    z-index: 10;
+}
+
+.navigation >a  {
+    color: black;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navigation {
+    display:inline;
+}
+
+.navigation> a:hover {
+    text-decoration: underline;
+}
+
+/* Logo */
+.logo {
+    height: 6rem;
+    margin-left: 1rem;
+
+}
+
+@media (max-width:50rem) {
+    header {
+        padding: 0.80rem 0.5rem;
+    }
+}
+
+.logo {
+    width: 5rem;
+}
+
+
+/* Video */
+.video {
+    width:100%;
+    margin-top: -1rem;
+}
+
+
+/* About us */
+
+.grid-container-about {
+    grid-template-columns: auto auto;
+    display:grid;
+    text-align: center;
+    padding: 6.5rem;
+    
+}
+
+.grid-item-about-picture> img {
+    width: 35rem;
+    border-radius: 2rem;
+    height: 25rem;
+    margin-left:65rem;
+    margin-top: -18rem;
+  
+}
+
+.grid-item-about-content> h1 {
+    text-align: left;
+    color:#caa880;
+    font-size: 3.5rem;
+    margin-bottom: -2rem;
+}
+
+.grid-item-about-content>p {
+    color: #3b4964;
+    text-align:left;
+    line-height: 2rem;
+    padding-top: 4rem;
+    font-size:large;
+}
+
+.grid-item-about-content {
+    margin-left: 4rem;
+}
+
+@media (max-width:768px) {
+    .grid-container-about {
+        grid-template-columns: inherit;
+    }
+    .grid-item-about-content{
+        padding: 3rem;
+    }
+    .grid-item-about-content>p {
+        line-height: 2rem;
+    }
+}
+
+/* Our Services */
+ 
+.grid-container { 
+ display: grid;
+ text-align:center;   
+ line-height: 2rem;
+ grid-template-columns: auto auto  auto;
+ margin-top: 4rem;
+ max-width:fit-content;
+ padding: 2rem;
+}
+
+#section2> h1 {
+    color: #caa880;
+    text-align: center;
+    margin-top: 14rem;
+    margin-bottom: 8rem;
+    font-size: 2.5rem;
+}
+
+.grid-item>h2 {
+    color: #caa880;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    
+}
+
+.grid-item>p {
+    color:#3b4964;
+    margin-bottom: 6rem;
+    font-size: 1.2rem;
+}
+
+.zambet-frumos {
+    position: relative;
+}
+
+.zambet-frumos img {
+    max-width: 100%;
+    height: 20rem;
+}
+
+.zambet-text {
+    position: absolute;
+    top: 0;
+    color: #ffff;
+    padding: 5rem;
+    font-size: 2rem;
+    right:5rem;
+    text-align:center;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* Footer */
+
+.footer {
+margin-top: 5rem;
+margin-bottom: 6rem;
+margin-left: 4rem;
+}
+.footer h1 {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.footer address {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.copyright {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+@media (max-width:768px) {
+    .grid-container {
+        grid-template-columns: inherit;
+        padding: 0 5rem 0 5rem;
+    }
+}
+.zambet-frumos {
+    margin-top: 5rem;
+}
+.zambet-text {
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.footer {
+    margin-left: 4rem;
+}
